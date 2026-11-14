@@ -1,0 +1,1228 @@
+{
+ "cycle": 2,
+ "signature": "27236059813fe144",
+ "meta": {
+  "source": "données synthétiques (marche aléatoire, graine 1, effet tournant du mois injecté sur les indices)",
+  "synthetique": true,
+  "graine": 1,
+  "genere_le": "2026-11-14 08:13",
+  "capital": 10000.0,
+  "plan": "docs/RECHERCHE_PLAN_CYCLE2.md",
+  "fin_developpement": "2025-11-13",
+  "univers": {
+   "symboles": {
+    "AUDUSD": "forex",
+    "BTCUSD": "crypto",
+    "ETHUSD": "crypto",
+    "EURUSD": "forex",
+    "GBPUSD": "forex",
+    "GER40": "indices",
+    "JP225": "indices",
+    "NAS100": "indices",
+    "NZDUSD": "forex",
+    "UK100": "indices",
+    "US30": "indices",
+    "US500": "indices",
+    "USDCAD": "forex",
+    "USDCHF": "forex",
+    "USDJPY": "forex",
+    "XAGUSD": "metaux",
+    "XAUUSD": "metaux"
+   },
+   "exclus": {},
+   "absents": {}
+  }
+ },
+ "temps": {
+  "chargement": 1.5713525000001027,
+  "C1_base": 2.486807400000089,
+  "C1_robustesse": 1.226377500000126,
+  "C1_capital": 0.5181612000001223,
+  "C2_base": 1.5296336000001247,
+  "C2_robustesse": 1.965943100000004,
+  "C2_capital": 0.7525981999997384,
+  "S3_composante": 1.438856200000373,
+  "P_base": 1.4019452000002275,
+  "P_robustesse": 9.803178099999968,
+  "P_capital": 1.8248481999999058,
+  "total_commande": 24.77735840000014,
+  "controle_final": 2.1607334999998784,
+  "nouveaux_marches": 2.934408699999949
+ },
+ "strategies": {
+  "C1": {
+   "base": {
+    "nb_trades": 711,
+    "debut": "2008-01-29",
+    "fin": "2025-11-13",
+    "annees": 17.790554414784395,
+    "obs_par_an": 260.9811865189289,
+    "sharpe": 1.2303860326920772,
+    "tstat": 5.18962687048972,
+    "rendement_moyen_jour": 5.664828526422376e-05,
+    "vol_annuelle_pct": 1.2015852187603486,
+    "cagr_pct": 1.4820336579796534,
+    "rendement_total_pct": 29.917223099922595,
+    "equity_finale": 12991.72230999226,
+    "dd_cloture_pct": 2.6036068732716644,
+    "dd_pire_pct": 2.814449458029568,
+    "date_dd_max": "2018-07-02",
+    "annees_civiles": {
+     "2009": 3.9536202884286054,
+     "2010": 2.0717843861087104,
+     "2011": 2.2120757154873605,
+     "2012": 1.0765846262603684,
+     "2013": 1.8972501733615088,
+     "2014": 2.6439053552409497,
+     "2015": 2.1493263269733776,
+     "2016": 0.5938961318318503,
+     "2017": 1.1765580641038387,
+     "2018": -0.9397162997010655,
+     "2019": 0.9036359436330743,
+     "2020": 0.6714751044525125,
+     "2021": 0.666418427418547,
+     "2022": 3.86468551548258,
+     "2023": 1.3053450155629198,
+     "2024": 0.10862769495540991
+    },
+    "pct_annees_positives": 93.75,
+    "pct_gagnants": 58.08720112517582,
+    "r_moyen": 0.08468523251510227,
+    "swaps_usd": -414.8102644788695,
+    "couts_execution_usd": 640.1459357877047,
+    "commissions_usd": 0.0,
+    "duree_moyenne_barres": 3.9845288326300983,
+    "contribution_symboles": {
+     "GER40": 906.8511352918177,
+     "JP225": 619.655729469555,
+     "NAS100": 188.82396944444477,
+     "UK100": 177.065085647503,
+     "US30": 0.0,
+     "US500": 1099.326390138889
+    },
+    "trades_par_symbole": {
+     "GER40": 150,
+     "JP225": 214,
+     "NAS100": 113,
+     "UK100": 20,
+     "US30": 0,
+     "US500": 214
+    },
+    "contribution_classes": {
+     "indices": 2991.72230999221
+    },
+    "nb_symboles": 6,
+    "nb_symboles_positifs": 5,
+    "part_symboles_positifs": 0.8333333333333334,
+    "refus": {
+     "lot_inferieur_minimum": 573
+    },
+    "nb_refus": 573,
+    "nb_signaux": 1284,
+    "compteurs": {
+     "refus:lot_inferieur_minimum": 573
+    },
+    "date_arret_15": null,
+    "exclus": {},
+    "nb_reequilibrages": 0
+   },
+   "reference": {
+    "sharpe": 0.13481750190005912,
+    "tstat": 0.5686447276567421,
+    "dd_pire_pct": 11.289442934891317,
+    "cagr_pct": 0.32343545029556164,
+    "rendement_total_pct": 5.913030673226993,
+    "vol_annuelle_pct": 2.6569421737616703,
+    "nb_trades": 863,
+    "debut": "2008-01-29",
+    "fin": "2025-11-13",
+    "nom": "C1 toujours long (même risque 0,5 %, même stop 3 ATR)"
+   },
+   "bootstrap": {
+    "p5_pct": -0.36409228080372996,
+    "p50_pct": 1.526163548531001,
+    "nb_tirages": 5000,
+    "bloc_jours": 20,
+    "jours_par_an": 260.9811865189289
+   },
+   "verdict": {
+    "criteres": [
+     {
+      "numero": 1,
+      "nom": "Assez de données (années / trades)",
+      "valeur": "17.8 ans / 711",
+      "seuil": ">= 8 ans / >= 100",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 2,
+      "nom": "Sharpe annualisé après coûts",
+      "valeur": "1.23",
+      "seuil": ">= 0.5",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 3,
+      "nom": "t-stat du rendement journalier moyen",
+      "valeur": "5.19",
+      "seuil": ">= 3.0",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 4,
+      "nom": "Drawdown max au pire prix",
+      "valeur": "2.8 %",
+      "seuil": "<= 15 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 5,
+      "nom": "Années civiles positives",
+      "valeur": "94 %",
+      "seuil": ">= 60 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 6,
+      "nom": "Robustesse",
+      "valeur": "variantes : entrée J-1 1.05, sortie 3e jour 1.19, stop 4 ATR 0.96 ; coûts doublés : 0.78 ; symboles positifs : 5/6",
+      "seuil": "variantes >= 0.3 ; coûts doublés >= 0.3 ; >= 50 % des symboles positifs",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 7,
+      "nom": "Mieux que la référence (C1 toujours long (même risque 0,5 %, même stop 3 ATR))",
+      "valeur": "1.23 contre 0.13",
+      "seuil": "Sharpe > référence",
+      "ok": true,
+      "detail": ""
+     }
+    ],
+    "retenue": true,
+    "decision": "RETENUE pour le contrôle final",
+    "criteres_ko": []
+   },
+   "robustesse": {
+    "variantes": {
+     "entrée J-1": {
+      "sharpe": 1.0529195348254834,
+      "tstat": 4.441093579742692,
+      "cagr_pct": 1.3961916467894353,
+      "dd_pire_pct": 2.081776452767267,
+      "nb_trades": 701,
+      "pct_annees_positives": 100.0,
+      "part_symboles_positifs": 0.8333333333333334,
+      "rendement_total_pct": 27.975954607113152
+     },
+     "sortie 3e jour": {
+      "sharpe": 1.1914143513376703,
+      "tstat": 5.025248797778284,
+      "cagr_pct": 1.222773654223852,
+      "dd_pire_pct": 2.1224530864292332,
+      "nb_trades": 699,
+      "pct_annees_positives": 87.5,
+      "part_symboles_positifs": 0.8333333333333334,
+      "rendement_total_pct": 24.137415532991447
+     },
+     "stop 4 ATR": {
+      "sharpe": 0.9631750053961539,
+      "tstat": 4.062561469469245,
+      "cagr_pct": 0.790640387039665,
+      "dd_pire_pct": 2.066684894098941,
+      "nb_trades": 600,
+      "pct_annees_positives": 93.75,
+      "part_symboles_positifs": 0.6666666666666666,
+      "rendement_total_pct": 15.039592679169523
+     }
+    },
+    "couts_doubles": {
+     "sharpe": 0.7809206992869874,
+     "tstat": 3.293833753845626,
+     "cagr_pct": 0.9143008532955132,
+     "dd_pire_pct": 3.1009605176741997,
+     "nb_trades": 695,
+     "pct_annees_positives": 87.5,
+     "part_symboles_positifs": 0.8333333333333334,
+     "rendement_total_pct": 17.57662882651978
+    }
+   },
+   "capital": {
+    "minimum_standard": {
+     "capital_min": 11192.474999999977,
+     "nb_signaux": 1284,
+     "mediane_par_symbole": {
+      "GER40": 1839.2665372499991,
+      "JP225": 23.267552745300513,
+      "NAS100": 2949.765,
+      "UK100": 6556.615938524999,
+      "US30": 7731.738750000004,
+      "US500": 950.9349999999995
+     },
+     "part_signaux_jouables_20": 0.05996884735202492
+    },
+    "minimum_cent": {
+     "capital_min": 111.92474999999978,
+     "nb_signaux": 1284,
+     "mediane_par_symbole": {
+      "GER40": 18.39266537249999,
+      "JP225": 0.23267552745300515,
+      "NAS100": 29.497650000000004,
+      "UK100": 65.56615938524999,
+      "US30": 77.31738750000005,
+      "US500": 9.509349999999994
+     },
+     "part_signaux_jouables_20": 0.46417445482866043
+    },
+    "sim_20_standard": {
+     "capital_initial": 20.0,
+     "nb_trades": 0,
+     "nb_signaux": 1284,
+     "nb_refus": 1284,
+     "refus": {
+      "lot_inferieur_minimum": 1284
+     },
+     "equity_finale": 20.0,
+     "rendement_total_pct": 0.0,
+     "dd_pire_pct": 0.0,
+     "part_signaux_pris": 0.0
+    },
+    "sim_20_cent": {
+     "capital_initial": 20.0,
+     "nb_trades": 260,
+     "nb_signaux": 1284,
+     "nb_refus": 1024,
+     "refus": {
+      "lot_inferieur_minimum": 1024
+     },
+     "equity_finale": 21.853327965348218,
+     "rendement_total_pct": 9.266639826741097,
+     "dd_pire_pct": 1.7461872478517084,
+     "part_signaux_pris": 0.20249221183800623
+    }
+   }
+  },
+  "C2": {
+   "base": {
+    "nb_trades": 312,
+    "debut": "2008-10-07",
+    "fin": "2025-11-13",
+    "annees": 17.100616016427104,
+    "obs_par_an": 333.37980307396737,
+    "sharpe": -0.12411492952485206,
+    "tstat": -0.5132511163496292,
+    "rendement_moyen_jour": -2.186274482730542e-05,
+    "vol_annuelle_pct": 5.8724583682932785,
+    "cagr_pct": -0.8972038083105649,
+    "rendement_total_pct": -14.283067490362866,
+    "equity_finale": 8571.693250963714,
+    "dd_cloture_pct": 28.719011169651065,
+    "dd_pire_pct": 28.855366846533325,
+    "date_dd_max": "2020-05-21",
+    "annees_civiles": {
+     "2009": 3.1677144602096474,
+     "2010": -4.230700463777026,
+     "2011": 3.6405229866266264,
+     "2012": -5.344846458238262,
+     "2013": -3.855290623801677,
+     "2014": 1.1614530918421018,
+     "2015": 0.032178435990104504,
+     "2016": -6.016869497771882,
+     "2017": -9.097570925944487,
+     "2018": 6.659281763912772,
+     "2019": -7.251595317957548,
+     "2020": 0.8208898012823207,
+     "2021": -2.421458488982342,
+     "2022": 6.194533953486636,
+     "2023": -6.186860495748892,
+     "2024": 0.49346653690520714
+    },
+    "pct_annees_positives": 50.0,
+    "pct_gagnants": 24.358974358974358,
+    "r_moyen": -0.041436961127791334,
+    "swaps_usd": -4745.697413196977,
+    "couts_execution_usd": 1430.2063851834255,
+    "commissions_usd": 0.0,
+    "duree_moyenne_barres": 56.98397435897436,
+    "contribution_symboles": {
+     "BTCUSD": 51.494486166666505,
+     "ETHUSD": -1459.4972057777777,
+     "GER40": 231.7216973381158,
+     "JP225": 721.770155537341,
+     "NAS100": 275.2926438888897,
+     "UK100": 279.93012797710156,
+     "US30": 318.64428319444437,
+     "US500": 795.2510626388881,
+     "XAGUSD": -1361.8000000000025,
+     "XAUUSD": -1281.1140000000012
+    },
+    "trades_par_symbole": {
+     "BTCUSD": 26,
+     "ETHUSD": 30,
+     "GER40": 33,
+     "JP225": 38,
+     "NAS100": 36,
+     "UK100": 14,
+     "US30": 6,
+     "US500": 36,
+     "XAGUSD": 40,
+     "XAUUSD": 53
+    },
+    "contribution_classes": {
+     "crypto": -1408.0027196111112,
+     "indices": 2622.6099705747806,
+     "metaux": -2642.9140000000034
+    },
+    "nb_symboles": 10,
+    "nb_symboles_positifs": 7,
+    "part_symboles_positifs": 0.7,
+    "refus": {
+     "lot_inferieur_minimum": 1086
+    },
+    "nb_refus": 1086,
+    "nb_signaux": 4477,
+    "compteurs": {
+     "refus:lot_inferieur_minimum": 1086
+    },
+    "date_arret_15": "2014-02-19 00:00:00",
+    "exclus": {},
+    "nb_reequilibrages": 932
+   },
+   "reference": {
+    "sharpe": -0.1523550666754514,
+    "tstat": -0.630032247949994,
+    "dd_pire_pct": 31.824666140874164,
+    "cagr_pct": -1.5727182155763408,
+    "rendement_total_pct": -23.744589184643196,
+    "vol_annuelle_pct": 8.198833584424257,
+    "nb_trades": 111,
+    "debut": "2008-10-07",
+    "fin": "2025-11-13",
+    "nom": "C2 toujours long (même cible de volatilité, même stop 4 ATR)"
+   },
+   "bootstrap": {
+    "p5_pct": -9.30959911621673,
+    "p50_pct": -0.7398491975844801,
+    "nb_tirages": 5000,
+    "bloc_jours": 20,
+    "jours_par_an": 333.37980307396737
+   },
+   "verdict": {
+    "criteres": [
+     {
+      "numero": 1,
+      "nom": "Assez de données (années / trades)",
+      "valeur": "17.1 ans / 312",
+      "seuil": ">= 8 ans / >= 100",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 2,
+      "nom": "Sharpe annualisé après coûts",
+      "valeur": "-0.12",
+      "seuil": ">= 0.5",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 3,
+      "nom": "t-stat du rendement journalier moyen",
+      "valeur": "-0.51",
+      "seuil": ">= 3.0",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 4,
+      "nom": "Drawdown max au pire prix",
+      "valeur": "28.9 %",
+      "seuil": "<= 15 %",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 5,
+      "nom": "Années civiles positives",
+      "valeur": "50 %",
+      "seuil": ">= 60 %",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 6,
+      "nom": "Robustesse",
+      "valeur": "variantes : SMA150 -0.29, SMA250 -0.20, évaluation mensuelle -0.23 ; coûts doublés : -1.04 ; symboles positifs : 7/10",
+      "seuil": "variantes >= 0.3 ; coûts doublés >= 0.3 ; >= 50 % des symboles positifs",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 7,
+      "nom": "Mieux que la référence (C2 toujours long (même cible de volatilité, même stop 4 ATR))",
+      "valeur": "Sharpe -0.12 contre -0.15 ; pire baisse 28.9 % contre 31.8 % (2/3 = 21.2 %)",
+      "seuil": "Sharpe > référence ET pire baisse <= 2/3 de celle de la référence",
+      "ok": false,
+      "detail": ""
+     }
+    ],
+    "retenue": false,
+    "decision": "REJETÉE",
+    "criteres_ko": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   },
+   "robustesse": {
+    "variantes": {
+     "SMA150": {
+      "sharpe": -0.28817469021709907,
+      "tstat": -1.1983447659551603,
+      "cagr_pct": -1.8234680515886281,
+      "dd_pire_pct": 36.329486909394774,
+      "nb_trades": 350,
+      "pct_annees_positives": 31.25,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": -27.256398914872616
+     },
+     "SMA250": {
+      "sharpe": -0.19886356927914425,
+      "tstat": -0.8177372122993314,
+      "cagr_pct": -1.3361383168671193,
+      "dd_pire_pct": 35.19782146172972,
+      "nb_trades": 284,
+      "pct_annees_positives": 50.0,
+      "part_symboles_positifs": 0.6,
+      "rendement_total_pct": -20.343783943661965
+     },
+     "évaluation mensuelle": {
+      "sharpe": -0.2320660265865658,
+      "tstat": -0.9596601123519802,
+      "cagr_pct": -1.4936332606959257,
+      "dd_pire_pct": 38.680360770013735,
+      "nb_trades": 169,
+      "pct_annees_positives": 37.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": -22.69002692327885
+     }
+    },
+    "couts_doubles": {
+     "sharpe": -1.044970305805639,
+     "tstat": -4.321254325004999,
+     "cagr_pct": -5.984156407023288,
+     "dd_pire_pct": 68.31981033233188,
+     "nb_trades": 309,
+     "pct_annees_positives": 12.5,
+     "part_symboles_positifs": 0.3,
+     "rendement_total_pct": -65.18860719604734
+    }
+   },
+   "capital": {
+    "minimum_standard": {
+     "capital_min": 14868.57999999998,
+     "nb_signaux": 4477,
+     "mediane_par_symbole": {
+      "BTCUSD": 58.209999999999994,
+      "ETHUSD": 1.337,
+      "GER40": 2394.370435600001,
+      "JP225": 32.755288350523514,
+      "NAS100": 3986.990000000002,
+      "UK100": 9412.438328150003,
+      "US30": 11225.26000000001,
+      "US500": 1340.4500000000007,
+      "XAGUSD": 4034.0000000000023,
+      "XAUUSD": 3481.8999999999983
+     },
+     "part_signaux_jouables_20": 0.046459682823319186
+    },
+    "minimum_cent": {
+     "capital_min": 148.6857999999998,
+     "nb_signaux": 4477,
+     "mediane_par_symbole": {
+      "BTCUSD": 0.5820999999999998,
+      "ETHUSD": 0.01337,
+      "GER40": 23.943704356000012,
+      "JP225": 0.32755288350523515,
+      "NAS100": 39.86990000000002,
+      "UK100": 94.12438328150003,
+      "US30": 112.2526000000001,
+      "US500": 13.404500000000008,
+      "XAGUSD": 40.340000000000025,
+      "XAUUSD": 34.81899999999998
+     },
+     "part_signaux_jouables_20": 0.35269153450971635
+    },
+    "sim_20_standard": {
+     "capital_initial": 20.0,
+     "nb_trades": 30,
+     "nb_signaux": 4477,
+     "nb_refus": 4275,
+     "refus": {
+      "lot_inferieur_minimum": 4275
+     },
+     "equity_finale": 17.189784444444456,
+     "rendement_total_pct": -14.05107777777772,
+     "dd_pire_pct": 15.793896857079263,
+     "part_signaux_pris": 0.006700915791824883
+    },
+    "sim_20_cent": {
+     "capital_initial": 20.0,
+     "nb_trades": 120,
+     "nb_signaux": 4477,
+     "nb_refus": 3286,
+     "refus": {
+      "lot_inferieur_minimum": 3286
+     },
+     "equity_finale": 19.18254856073319,
+     "rendement_total_pct": -4.087257196334059,
+     "dd_pire_pct": 22.48757773669854,
+     "part_signaux_pris": 0.02680366316729953
+    }
+   }
+  },
+  "P": {
+   "base": {
+    "nb_trades": 618,
+    "debut": "2008-01-29",
+    "fin": "2025-11-13",
+    "annees": 17.790554414784395,
+    "obs_par_an": 330.56867497691593,
+    "sharpe": 0.28907169822086304,
+    "tstat": 1.219271198408124,
+    "rendement_moyen_jour": 1.3661695992513463e-05,
+    "vol_annuelle_pct": 1.5622867164021381,
+    "cagr_pct": 0.4403762368247355,
+    "rendement_total_pct": 8.13101109102352,
+    "equity_finale": 10813.101109102352,
+    "dd_cloture_pct": 6.740184841726518,
+    "dd_pire_pct": 6.78141481169506,
+    "date_dd_max": "2020-07-06",
+    "annees_civiles": {
+     "2009": 2.0804418089551913,
+     "2010": -2.381347473991935,
+     "2011": 1.9741762568936227,
+     "2012": 0.3254317107299176,
+     "2013": 0.8682569705072973,
+     "2014": 0.7482566319804151,
+     "2015": 2.423461309943442,
+     "2016": -0.791756455023862,
+     "2017": -2.8575444518008752,
+     "2018": 0.9954300646848768,
+     "2019": -1.9285489736256656,
+     "2020": 1.0186501272254178,
+     "2021": -0.6202810467960118,
+     "2022": 2.436813086502787,
+     "2023": -1.0665754601537625,
+     "2024": 1.1132856944344738
+    },
+    "pct_annees_positives": 62.5,
+    "pct_gagnants": 52.42718446601942,
+    "r_moyen": 0.06403171546047885,
+    "swaps_usd": -915.9794406009063,
+    "couts_execution_usd": 660.9524020241511,
+    "commissions_usd": 0.0,
+    "duree_moyenne_barres": 17.432038834951456,
+    "contribution_symboles": {
+     "GER40": 244.8933120522356,
+     "JP225": 591.6755309481455,
+     "NAS100": 13.27029069444474,
+     "UK100": 0.0,
+     "US30": 0.0,
+     "US500": 539.500266388888,
+     "BTCUSD": 53.724982222222245,
+     "ETHUSD": -587.8346588333334,
+     "XAGUSD": -42.88000000000013,
+     "XAUUSD": -34.0440000000002
+    },
+    "trades_par_symbole": {
+     "GER40": 21,
+     "JP225": 343,
+     "NAS100": 18,
+     "UK100": 0,
+     "US30": 0,
+     "US500": 176,
+     "BTCUSD": 26,
+     "ETHUSD": 30,
+     "XAGUSD": 2,
+     "XAUUSD": 2
+    },
+    "contribution_classes": {
+     "indices": 1389.3394000837138,
+     "crypto": -534.1096766111111,
+     "metaux": -76.92400000000033
+    },
+    "nb_symboles": 10,
+    "nb_symboles_positifs": 5,
+    "part_symboles_positifs": 0.5,
+    "refus": {
+     "lot_inferieur_minimum": 5000
+    },
+    "nb_refus": 5000,
+    "nb_signaux": 7085,
+    "compteurs": {
+     "refus:lot_inferieur_minimum": 5000
+    },
+    "date_arret_15": "2018-04-13 00:00:00",
+    "exclus": {},
+    "nb_reequilibrages": 932
+   },
+   "bootstrap": {
+    "p5_pct": -1.8978792337372985,
+    "p50_pct": 0.41366746851458913,
+    "nb_tirages": 5000,
+    "bloc_jours": 20,
+    "jours_par_an": 330.56867497691593
+   },
+   "evaluable": true,
+   "raison_evaluabilite": "composante(s) retenue(s) seule(s) : C1",
+   "reference": {
+    "nom": "meilleure référence des composantes : S3",
+    "sharpe": 0.6282962754219928,
+    "composantes": {
+     "C1": 0.13481750190005912,
+     "C2": -0.1523550666754514,
+     "S3": 0.6282962754219928
+    }
+   },
+   "verdict": {
+    "criteres": [
+     {
+      "numero": 1,
+      "nom": "Assez de données (années / trades)",
+      "valeur": "17.8 ans / 618",
+      "seuil": ">= 8 ans / >= 100",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 2,
+      "nom": "Sharpe annualisé après coûts",
+      "valeur": "0.29",
+      "seuil": ">= 0.5",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 3,
+      "nom": "t-stat du rendement journalier moyen",
+      "valeur": "1.22",
+      "seuil": ">= 3.0",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 4,
+      "nom": "Drawdown max au pire prix",
+      "valeur": "6.8 %",
+      "seuil": "<= 15 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 5,
+      "nom": "Années civiles positives",
+      "valeur": "62 %",
+      "seuil": ">= 60 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 6,
+      "nom": "Robustesse",
+      "valeur": "variantes : C1 entrée J-1 0.28, C1 sortie 3e jour 0.24, C1 stop 4 ATR 0.25, C2 SMA150 -0.05, C2 SMA250 0.17, C2 évaluation mensuelle 0.03, S3 RSI < 5 0.27, S3 RSI < 20 0.25, S3 sortie SMA10 0.28 ; coûts doublés : -0.73 ; symboles positifs : 5/10",
+      "seuil": "variantes >= 0.3 ; coûts doublés >= 0.3 ; >= 50 % des symboles positifs",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 7,
+      "nom": "Mieux que la référence (meilleure référence des composantes : S3)",
+      "valeur": "0.29 contre 0.63",
+      "seuil": "Sharpe > référence",
+      "ok": false,
+      "detail": ""
+     }
+    ],
+    "retenue": false,
+    "decision": "REJETÉE",
+    "criteres_ko": [
+     2,
+     3,
+     6,
+     7
+    ]
+   },
+   "robustesse": {
+    "variantes": {
+     "C1 entrée J-1": {
+      "sharpe": 0.27734022797600477,
+      "tstat": 1.169789205281253,
+      "cagr_pct": 0.4270600772614319,
+      "dd_pire_pct": 6.6513778482218235,
+      "nb_trades": 615,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 7.87625352389052
+     },
+     "C1 sortie 3e jour": {
+      "sharpe": 0.237367416139789,
+      "tstat": 1.0011884792632826,
+      "cagr_pct": 0.35503559480289937,
+      "dd_pire_pct": 6.9844147865186095,
+      "nb_trades": 609,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 6.5081093248239075
+     },
+     "C1 stop 4 ATR": {
+      "sharpe": 0.2454242892913575,
+      "tstat": 1.035171444193421,
+      "cagr_pct": 0.3667380981323909,
+      "dd_pire_pct": 6.944999615959402,
+      "nb_trades": 591,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 6.729284806168256
+     },
+     "C2 SMA150": {
+      "sharpe": -0.045882518739447264,
+      "tstat": -0.19352719049889855,
+      "cagr_pct": -0.08219828266357032,
+      "dd_pire_pct": 8.18350452565472,
+      "nb_trades": 634,
+      "pct_annees_positives": 50.0,
+      "part_symboles_positifs": 0.2,
+      "rendement_total_pct": -1.4523051813957633
+     },
+     "C2 SMA250": {
+      "sharpe": 0.1714700427653474,
+      "tstat": 0.7232409323373477,
+      "cagr_pct": 0.2496574780842309,
+      "dd_pire_pct": 8.71241234622082,
+      "nb_trades": 594,
+      "pct_annees_positives": 68.75,
+      "part_symboles_positifs": 0.4,
+      "rendement_total_pct": 4.535871907018985
+     },
+     "C2 évaluation mensuelle": {
+      "sharpe": 0.027031642173841772,
+      "tstat": 0.11401635978579143,
+      "cagr_pct": 0.029041815881969413,
+      "dd_pire_pct": 9.299619107885926,
+      "nb_trades": 526,
+      "pct_annees_positives": 43.75,
+      "part_symboles_positifs": 0.3,
+      "rendement_total_pct": 0.5179316477461615
+     },
+     "S3 RSI < 5": {
+      "sharpe": 0.2685121281386513,
+      "tstat": 1.1325532948320314,
+      "cagr_pct": 0.40235896415363737,
+      "dd_pire_pct": 6.738400372052215,
+      "nb_trades": 551,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 7.40518447581715
+     },
+     "S3 RSI < 20": {
+      "sharpe": 0.2531328125948943,
+      "tstat": 1.0676851095024307,
+      "cagr_pct": 0.3952770178249354,
+      "dd_pire_pct": 7.286329347559198,
+      "nb_trades": 740,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 7.270484881764738
+     },
+     "S3 sortie SMA10": {
+      "sharpe": 0.2835317241334091,
+      "tstat": 1.1959042244486082,
+      "cagr_pct": 0.43752145123538977,
+      "dd_pire_pct": 6.430160547603293,
+      "nb_trades": 611,
+      "pct_annees_positives": 62.5,
+      "part_symboles_positifs": 0.5,
+      "rendement_total_pct": 8.07634710651135
+     }
+    },
+    "couts_doubles": {
+     "sharpe": -0.7323644122063504,
+     "tstat": -3.0890289157952977,
+     "cagr_pct": -1.1833802428868334,
+     "dd_pire_pct": 22.927507503400133,
+     "nb_trades": 604,
+     "pct_annees_positives": 25.0,
+     "part_symboles_positifs": 0.3,
+     "rendement_total_pct": -19.086176592288485
+    }
+   },
+   "capital": {
+    "minimum_standard": {
+     "capital_min": 42302.52000000006,
+     "nb_signaux": 7085,
+     "mediane_par_symbole": {
+      "BTCUSD": 174.62999999999997,
+      "ETHUSD": 4.011,
+      "GER40": 6630.9347527499995,
+      "JP225": 89.24469275503928,
+      "NAS100": 10165.185000000001,
+      "UK100": 24489.72400680001,
+      "US30": 29915.910000000003,
+      "US500": 3531.5999999999985,
+      "XAGUSD": 12102.000000000007,
+      "XAUUSD": 10445.699999999995
+     },
+     "part_signaux_jouables_20": 0.02427664079040226
+    },
+    "minimum_cent": {
+     "capital_min": 423.0252000000006,
+     "nb_signaux": 7085,
+     "mediane_par_symbole": {
+      "BTCUSD": 1.7462999999999997,
+      "ETHUSD": 0.04011,
+      "GER40": 66.3093475275,
+      "JP225": 0.8924469275503928,
+      "NAS100": 101.65185,
+      "UK100": 244.89724006800012,
+      "US30": 299.1591,
+      "US500": 35.31599999999999,
+      "XAGUSD": 121.02000000000008,
+      "XAUUSD": 104.45699999999995
+     },
+     "part_signaux_jouables_20": 0.19378969654199013
+    },
+    "sim_20_standard": {
+     "capital_initial": 20.0,
+     "nb_trades": 19,
+     "nb_signaux": 7214,
+     "nb_refus": 7049,
+     "refus": {
+      "lot_inferieur_minimum": 7049
+     },
+     "equity_finale": 19.38336783907223,
+     "rendement_total_pct": -3.0831608046388626,
+     "dd_pire_pct": 4.14326130882432,
+     "part_signaux_pris": 0.002633767673967286
+    },
+    "sim_20_cent": {
+     "capital_initial": 20.0,
+     "nb_trades": 399,
+     "nb_signaux": 7134,
+     "nb_refus": 5932,
+     "refus": {
+      "lot_inferieur_minimum": 5932
+     },
+     "equity_finale": 19.959335205610802,
+     "rendement_total_pct": -0.20332397194599006,
+     "dd_pire_pct": 6.676953640381889,
+     "part_signaux_pris": 0.05592935239697225
+    }
+   }
+  }
+ },
+ "verdict_global": {
+  "decision": "EN ATTENTE DU CONTRÔLE FINAL",
+  "retenues": [
+   "C1"
+  ],
+  "explication": "Ces hypothèses passent tous les critères de développement du cycle 2. Elles ne sont PAS jouables : il faut choisir au plus deux finalistes (P compte pour un), les figer, les calculer UNE SEULE FOIS sur le contrôle final, passer le test des nouveaux marchés, puis au moins 3 mois de démo."
+ },
+ "composantes": {
+  "S3": {
+   "base": {
+    "nb_trades": 339,
+    "debut": "2008-10-06",
+    "fin": "2025-11-13",
+    "annees": 17.10335386721424,
+    "obs_par_an": 261.0014406915319,
+    "sharpe": 0.18888750461926507,
+    "tstat": 0.7811669665813864,
+    "rendement_moyen_jour": 5.6080169536829935e-06,
+    "vol_annuelle_pct": 0.7749059458878105,
+    "cagr_pct": 0.14347111383927746,
+    "rendement_total_pct": 2.4823893262224894,
+    "equity_finale": 10248.23893262225,
+    "dd_cloture_pct": 1.6996257438925935,
+    "dd_pire_pct": 1.797585803105527,
+    "date_dd_max": "2021-03-19",
+    "annees_civiles": {
+     "2009": 0.10955141410065039,
+     "2010": -0.9912539534317588,
+     "2011": 2.473960510885509,
+     "2012": -0.34450207885328155,
+     "2013": 0.12362284419507041,
+     "2014": -0.32630877041609496,
+     "2015": 0.13831958695535995,
+     "2016": 0.17753077451114763,
+     "2017": -0.7713105040225376,
+     "2018": 0.133773247240776,
+     "2019": 0.9943979270510495,
+     "2020": -1.1753262789725216,
+     "2021": 0.4457411990777205,
+     "2022": 0.023252316059285683,
+     "2023": -0.12524961700561832,
+     "2024": 0.8545142186285215
+    },
+    "pct_annees_positives": 62.5,
+    "pct_gagnants": 64.0117994100295,
+    "r_moyen": 0.015441467099492436,
+    "swaps_usd": -161.41635665914083,
+    "couts_execution_usd": 221.1257544311039,
+    "commissions_usd": 0.0,
+    "duree_moyenne_barres": 3.9351032448377583,
+    "contribution_symboles": {
+     "GER40": 28.995018454621984,
+     "JP225": 294.93251557350845,
+     "NAS100": 12.387063194444577,
+     "UK100": -54.71418376699981,
+     "US30": 0.0,
+     "US500": -33.361480833331775
+    },
+    "trades_par_symbole": {
+     "GER40": 67,
+     "JP225": 91,
+     "NAS100": 43,
+     "UK100": 6,
+     "US30": 0,
+     "US500": 132
+    },
+    "contribution_classes": {
+     "indices": 248.23893262224345
+    },
+    "nb_symboles": 6,
+    "nb_symboles_positifs": 3,
+    "part_symboles_positifs": 0.5,
+    "refus": {
+     "lot_inferieur_minimum": 740
+    },
+    "nb_refus": 740,
+    "nb_signaux": 1079,
+    "compteurs": {
+     "refus:lot_inferieur_minimum": 740
+    },
+    "date_arret_15": null,
+    "exclus": {},
+    "nb_reequilibrages": 0
+   },
+   "reference": {
+    "nom": "US500 acheté et conservé",
+    "symboles": [
+     "US500"
+    ],
+    "sharpe": 0.6282962754219928,
+    "vol_annuelle_pct": 16.75394526450768,
+    "rendement_total_pct": 376.00440656225913,
+    "rendement_annualise_meme_risque_pct": 0.4850369245793962
+   },
+   "robustesse": {
+    "variantes": {
+     "RSI < 5": {
+      "sharpe": -0.022578332002211203,
+      "tstat": -0.09337540435078563,
+      "cagr_pct": -0.014052760551241938,
+      "dd_pire_pct": 1.3775572968448433,
+      "nb_trades": 171,
+      "pct_annees_positives": 50.0,
+      "part_symboles_positifs": 0.3333333333333333,
+      "rendement_total_pct": -0.24007757766428828
+     },
+     "RSI < 20": {
+      "sharpe": 0.05460620018267051,
+      "tstat": 0.2258305007481264,
+      "cagr_pct": 0.05258095359210735,
+      "dd_pire_pct": 3.441516505465848,
+      "nb_trades": 611,
+      "pct_annees_positives": 50.0,
+      "part_symboles_positifs": 0.6666666666666666,
+      "rendement_total_pct": 0.9031281186068885
+     },
+     "sortie SMA10": {
+      "sharpe": -0.005227282182309809,
+      "tstat": -0.02161805342312416,
+      "cagr_pct": -0.00876698895073691,
+      "dd_pire_pct": 3.263339992579993,
+      "nb_trades": 311,
+      "pct_annees_positives": 37.5,
+      "part_symboles_positifs": 0.16666666666666666,
+      "rendement_total_pct": -0.14983911651681447
+     }
+    },
+    "couts_doubles": {
+     "sharpe": -0.10677805563291784,
+     "tstat": -0.4415934764152611,
+     "cagr_pct": -0.08524151667944624,
+     "dd_pire_pct": 3.705162495123368,
+     "nb_trades": 334,
+     "pct_annees_positives": 25.0,
+     "part_symboles_positifs": 0.16666666666666666,
+     "rendement_total_pct": -1.447952418317766
+    }
+   },
+   "verdict": {
+    "criteres": [
+     {
+      "numero": 1,
+      "nom": "Assez de données (années / trades)",
+      "valeur": "17.1 ans / 339",
+      "seuil": ">= 8 ans / >= 100",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 2,
+      "nom": "Sharpe annualisé après coûts",
+      "valeur": "0.19",
+      "seuil": ">= 0.5",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 3,
+      "nom": "t-stat du rendement journalier moyen",
+      "valeur": "0.78",
+      "seuil": ">= 3.0",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 4,
+      "nom": "Drawdown max au pire prix",
+      "valeur": "1.8 %",
+      "seuil": "<= 15 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 5,
+      "nom": "Années civiles positives",
+      "valeur": "62 %",
+      "seuil": ">= 60 %",
+      "ok": true,
+      "detail": ""
+     },
+     {
+      "numero": 6,
+      "nom": "Robustesse",
+      "valeur": "variantes : RSI < 5 -0.02, RSI < 20 0.05, sortie SMA10 -0.01 ; coûts doublés : -0.11",
+      "seuil": "variantes >= 0.3 ; coûts doublés >= 0.3",
+      "ok": false,
+      "detail": ""
+     },
+     {
+      "numero": 7,
+      "nom": "Mieux que la référence passive (US500 acheté et conservé)",
+      "valeur": "0.19 contre 0.63",
+      "seuil": "Sharpe > référence",
+      "ok": false,
+      "detail": ""
+     }
+    ],
+    "retenue": false,
+    "decision": "REJETÉE",
+    "criteres_ko": [
+     2,
+     3,
+     6,
+     7
+    ]
+   }
+  }
+ },
+ "controle_final": {
+  "calcule_le": "2026-11-14 08:14",
+  "finalistes": {
+   "C1": {
+    "rendement_12m_pct": 0.4824961813399087,
+    "p5_pct": -0.36409228080372996,
+    "dd_pire_pct": 1.1111276902916107,
+    "sharpe": 0.521712289505103,
+    "nb_trades": 30,
+    "debut": "2025-11-14",
+    "fin": "2026-11-13",
+    "verdict": {
+     "criteres": [
+      {
+       "numero": 1,
+       "nom": "Rendement du contrôle final au-dessus du 5e centile du développement (bootstrap)",
+       "valeur": "0.5 % (5e centile -0.4 %)",
+       "seuil": ">= 5e centile",
+       "ok": true,
+       "detail": ""
+      },
+      {
+       "numero": 2,
+       "nom": "Drawdown du contrôle final au pire prix",
+       "valeur": "1.1 %",
+       "seuil": "<= 15 %",
+       "ok": true,
+       "detail": ""
+      }
+     ],
+     "confirmee": true,
+     "decision": "CONFIRMÉE (suite : test des nouveaux marchés, puis au moins 3 mois de démo)"
+    }
+   }
+  },
+  "decision_globale": "CONFIRMÉ(S) : test des nouveaux marchés puis au moins 3 mois de démo"
+ },
+ "nouveaux_marches": {
+  "calcule_le": "2026-11-14 08:14",
+  "source": "données synthétiques (marche aléatoire, graine 1, effet tournant du mois injecté sur les indices)",
+  "fin_developpement": "2025-11-13",
+  "reference": [
+   "AUDUSD",
+   "BTCUSD",
+   "ETHUSD",
+   "EURUSD",
+   "GBPUSD",
+   "GER40",
+   "JP225",
+   "NAS100",
+   "NZDUSD",
+   "UK100",
+   "US30",
+   "US500",
+   "USDCAD",
+   "USDCHF",
+   "USDJPY",
+   "XAGUSD",
+   "XAUUSD"
+  ],
+  "nouveaux": {
+   "AUS200": "indices",
+   "XTIUSD": "energies"
+  },
+  "finalistes": {
+   "C1": {
+    "symboles": [
+     "AUS200"
+    ],
+    "sharpe": 0.7996598632502141,
+    "tstat": 3.372873393641677,
+    "dd_pire_pct": 1.5988986926344424,
+    "nb_trades": 214,
+    "debut": "2008-01-29",
+    "fin": "2025-11-13",
+    "annees": 17.790554414784395,
+    "contribution_symboles": {
+     "AUS200": 869.1274576508139
+    },
+    "verdict": {
+     "ok": true,
+     "valeur": "0.80",
+     "seuil": ">= 0",
+     "decision": "OK (informatif) : peut passer en démo si le contrôle final est confirmé"
+    }
+   }
+  }
+ }
+}

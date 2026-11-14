@@ -1,0 +1,21 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Donnees et journaux (generes, parfois volumineux)
+data/*
+logs/*
+!data/.gitkeep
+!logs/.gitkeep
+
+# Systeme
+Thumbs.db
+desktop.ini
+.DS_Store

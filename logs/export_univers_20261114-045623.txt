@@ -1,0 +1,15 @@
+Recherche multi-marchés - export de l'univers MetaTrader 5
+Date : 2026-11-14 04:56:23 UTC | Python 3.13.17
+Demande : liste des symboles du broker
+Configuration : 17 symboles génériques, 0 nom(s) imposé(s) par « forcer »
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal connecté (build 6317, max barres par graphique : 100000000)
+     compte démo, devise USD, levier 1:100, mode hedging
+     broker MetaQuotes Ltd., serveur MetaQuotes-Demo
+
+=== Symboles du broker ===
+     12157 symboles dans le terminal
+[OK] 12157 symboles listés dans C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\logs\symboles_broker_20261114-045623.txt
+
+=> TERMINÉ : liste écrite dans logs.

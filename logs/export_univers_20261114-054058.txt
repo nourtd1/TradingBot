@@ -1,0 +1,94 @@
+Recherche multi-marchés - export de l'univers MetaTrader 5
+Date : 2026-11-14 05:40:58 UTC | Python 3.13.17
+Demande : D1 et H1 sur 20 ans, M15 sur 6 ans, symboles EURUSD,GBPUSD,XAUUSD, dossier C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers
+Configuration : 17 symboles génériques, 0 nom(s) imposé(s) par « forcer »
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal connecté (build 6317, max barres par graphique : 100000000)
+     compte démo, devise USD, levier 1:100, mode hedging
+     broker MetaQuotes Ltd., serveur MetaQuotes-Demo
+
+=== Symboles du broker ===
+     12157 symboles dans le terminal
+
+=== Résolution des noms ===
+[OK] EURUSD  -> EURUSD
+            retenu : EURUSD (tradable, visible)
+[OK] GBPUSD  -> GBPUSD
+            retenu : GBPUSD (tradable, visible)
+[OK] XAUUSD  -> XAUUSD
+            GOLD rejeté : action ou ETF (path « Nasdaq\Stock\GOLD »)
+            retenu : XAUUSD (tradable, visible)
+
+=== Décalage horaire du serveur ===
+[--] symbol_select(EURUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur EURUSD (EURUSD)
+     dernier tick : 2026-11-13 23:59:59 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -6 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] symbol_select(XAUUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur XAUUSD (XAUUSD)
+     dernier tick : 2026-11-13 22:59:59 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -7 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] symbol_select(GBPUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur GBPUSD (GBPUSD)
+     dernier tick : 2026-11-13 23:59:36 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -6 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] décalage non fiable : chaque symbole retire alors toute bougie qui finit après son dernier tick (prudent : peut retirer une bougie complète).
+
+=== EURUSD (forex) -> EURUSD ===
+[--] symbol_select(EURUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Euro vs US Dollar | path Forex\EURUSD
+     devises EUR/USD (marge EUR), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.7, short -1.0, triple le mercredi), spread actuel 2 points
+[OK] D1 : 5192 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123922 bougies, du 2006-11-14 06:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 149138 bougies, du 2020-11-13 17:45 au 2026-11-13 23:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 0.0, p90 1.0, p99 3.0 (3160736 ticks)
+[OK] fichiers dans data/univers/EURUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== GBPUSD (forex) -> GBPUSD ===
+[--] symbol_select(GBPUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Pound Sterling vs US Dollar | path Forex\GBPUSD
+     devises GBP/USD (marge GBP), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.2, short -2.2, triple le mercredi), spread actuel 0 points
+[OK] D1 : 5191 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123896 bougies, du 2006-11-14 06:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 149136 bougies, du 2020-11-13 17:45 au 2026-11-13 23:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 0.0, p90 2.0, p99 4.0 (3686069 ticks)
+[OK] fichiers dans data/univers/GBPUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== XAUUSD (métaux) -> XAUUSD ===
+[--] symbol_select(XAUUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Gold vs US Dollar | path Metals\XAUUSD
+     devises XAU/USD (marge USD), décimales 2, contrat 100.0, lots 0.01 à 100.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_CFDLEVERAGE, swap SYMBOL_SWAP_MODE_POINTS (long -12.6, short -4.6, triple le mercredi), spread actuel 21 points
+[OK] D1 : 5149 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 116917 bougies, du 2006-11-14 06:00 au 2026-11-13 21:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 141068 bougies, du 2020-11-13 17:45 au 2026-11-13 22:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 13.0, p90 40.0, p99 58.0 (3723667 ticks)
+[OK] fichiers dans data/univers/XAUUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== RÉSUMÉ ===
+Décalage heure serveur - UTC : -6 h (NON fiable)
+[OK] EURUSD  EURUSD       D1 5192 (2006-11-15 -> 2026-11-12) ; H1 123922 (2006-11-14 -> 2026-11-13) ; M15 149138 (2020-11-13 -> 2026-11-13)
+[OK] GBPUSD  GBPUSD       D1 5191 (2006-11-15 -> 2026-11-12) ; H1 123896 (2006-11-14 -> 2026-11-13) ; M15 149136 (2020-11-13 -> 2026-11-13)
+[OK] XAUUSD  XAUUSD       D1 5149 (2006-11-15 -> 2026-11-12) ; H1 116917 (2006-11-14 -> 2026-11-13) ; M15 141068 (2020-11-13 -> 2026-11-13)
+
+[OK] forex : 2/2 symbole(s) exporté(s)
+[OK] métaux : 1/1 symbole(s) exporté(s)
+     univers.json : C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers\univers.json
+     (export partiel : les autres symboles de univers.json sont conservés)
+
+=> TERMINÉ : au moins un symbole exporté dans chaque classe disponible.

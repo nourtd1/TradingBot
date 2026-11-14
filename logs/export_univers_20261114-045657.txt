@@ -1,0 +1,335 @@
+Recherche multi-marchés - export de l'univers MetaTrader 5
+Date : 2026-11-14 04:56:57 UTC | Python 3.13.17
+Demande : D1 et H1 sur 20 ans, M15 sur 6 ans, symboles tout l'univers, dossier C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers
+Configuration : 17 symboles génériques, 0 nom(s) imposé(s) par « forcer »
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal connecté (build 6317, max barres par graphique : 100000000)
+     compte démo, devise USD, levier 1:100, mode hedging
+     broker MetaQuotes Ltd., serveur MetaQuotes-Demo
+
+=== Symboles du broker ===
+     12157 symboles dans le terminal
+
+=== Résolution des noms ===
+[OK] EURUSD  -> EURUSD
+            retenu : EURUSD (tradable, visible)
+[OK] GBPUSD  -> GBPUSD
+            retenu : GBPUSD (tradable, visible)
+[OK] USDJPY  -> USDJPY
+            retenu : USDJPY (tradable, visible)
+[OK] AUDUSD  -> AUDUSD
+            retenu : AUDUSD (tradable, visible)
+[OK] USDCAD  -> USDCAD
+            retenu : USDCAD (tradable, visible)
+[OK] USDCHF  -> USDCHF
+            retenu : USDCHF (tradable, visible)
+[OK] NZDUSD  -> NZDUSD
+            retenu : NZDUSD (tradable, visible)
+[OK] XAUUSD  -> XAUUSD
+            GOLD rejeté : action ou ETF (path « Nasdaq\Stock\GOLD »)
+            retenu : XAUUSD (tradable, visible)
+[OK] XAGUSD  -> XAGUSD
+            retenu : XAGUSD (tradable, visible)
+[OK] US500   -> US500
+            SPXC rejeté : action ou ETF (path « Nasdaq\Stock\SPXC »)
+            SPXD rejeté : action ou ETF (path « Nasdaq\ETF\SPXD »)
+            SPXE rejeté : action ou ETF (path « Nasdaq\ETF\SPXE »)
+            SPXL rejeté : action ou ETF (path « Nasdaq\ETF\SPXL »)
+            SPXN rejeté : action ou ETF (path « Nasdaq\ETF\SPXN »)
+            SPXS rejeté : action ou ETF (path « Nasdaq\ETF\SPXS »)
+            SPXT rejeté : action ou ETF (path « Nasdaq\ETF\SPXT »)
+            SPXU rejeté : action ou ETF (path « Nasdaq\ETF\SPXU »)
+            SPXV rejeté : action ou ETF (path « Nasdaq\ETF\SPXV »)
+            SPXX rejeté : action ou ETF (path « Nasdaq\Stock\SPXX »)
+            retenu : US500 parmi 2 candidats valides (autres : US500M) ; règle : visible, puis nom le plus court, puis ordre des alias
+            attention : US500 n'est pas tradable chez ce broker (trade_mode désactivé)
+[OK] NAS100  -> USTEC
+            retenu : USTEC (visible)
+            attention : USTEC n'est pas tradable chez ce broker (trade_mode désactivé)
+[OK] US30    -> US30
+            retenu : US30 parmi 2 candidats valides (autres : US30M) ; règle : visible, puis nom le plus court, puis ordre des alias
+            attention : US30 n'est pas tradable chez ce broker (trade_mode désactivé)
+[OK] GER40   -> DE40
+            retenu : DE40 (visible)
+            attention : DE40 n'est pas tradable chez ce broker (trade_mode désactivé)
+[OK] UK100   -> UK100
+            retenu : UK100 (visible)
+            attention : UK100 n'est pas tradable chez ce broker (trade_mode désactivé)
+[OK] JP225   -> JPN225
+            retenu : JPN225 (visible)
+            attention : JPN225 n'est pas tradable chez ce broker (trade_mode désactivé)
+[--] BTCUSD  ABSENT : introuvable chez le broker : alias cherchés BTCUSD, XBTUSD, BITCOIN
+[--] ETHUSD  ABSENT : introuvable chez le broker : alias cherchés ETHUSD, ETHEREUM
+
+=== Décalage horaire du serveur ===
+[--] symbol_select(EURUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur EURUSD (EURUSD)
+     dernier tick : 2026-11-13 23:59:59 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -5 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] symbol_select(XAUUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur XAUUSD (XAUUSD)
+     dernier tick : 2026-11-13 22:59:59 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -6 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] symbol_select(GBPUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur GBPUSD (GBPUSD)
+     dernier tick : 2026-11-13 23:59:36 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -5 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] décalage non fiable : chaque symbole retire alors toute bougie qui finit après son dernier tick (prudent : peut retirer une bougie complète).
+
+=== EURUSD (forex) -> EURUSD ===
+[--] symbol_select(EURUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Euro vs US Dollar | path Forex\EURUSD
+     devises EUR/USD (marge EUR), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.7, short -1.0, triple le mercredi), spread actuel 2 points
+[OK] D1 : 5192 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123923 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 149141 bougies, du 2020-11-13 17:00 au 2026-11-13 23:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 0.0, p90 1.0, p99 3.0 (3160736 ticks)
+[OK] fichiers dans data/univers/EURUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== GBPUSD (forex) -> GBPUSD ===
+[--] symbol_select(GBPUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Pound Sterling vs US Dollar | path Forex\GBPUSD
+     devises GBP/USD (marge GBP), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.2, short -2.2, triple le mercredi), spread actuel 0 points
+[OK] D1 : 5191 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123897 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 149139 bougies, du 2020-11-13 17:00 au 2026-11-13 23:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 0.0, p90 2.0, p99 4.0 (3686069 ticks)
+[OK] fichiers dans data/univers/GBPUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== USDJPY (forex) -> USDJPY ===
+[--] symbol_select(USDJPY) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US Dollar vs Yen | path Forex\USDJPY
+     devises USD/JPY (marge USD), décimales 3, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.1, short -0.6, triple le mercredi), spread actuel 0 points
+[OK] D1 : 5192 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123903 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 2.0, p90 3.0, p99 5.0 (4193468 ticks)
+[OK] fichiers dans data/univers/USDJPY/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== AUDUSD (forex) -> AUDUSD ===
+[--] symbol_select(AUDUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Australian Dollar vs US Dollar | path Forex\AUDUSD
+     devises AUD/USD (marge AUD), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long 6.3, short -14.8, triple le mercredi), spread actuel 0 points
+[OK] D1 : 5193 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123921 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+[OK] spread (points) sur 10 jours ouvrés : médiane 1.0, p90 2.0, p99 4.0 (2018878 ticks)
+[OK] fichiers dans data/univers/AUDUSD/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== USDCAD (forex) -> USDCAD ===
+[--] symbol_select(USDCAD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US Dollar vs Canadian Dollar | path Forex\USDCAD
+     devises USD/CAD (marge USD), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long -0.8, short -0.4, triple le mercredi), spread actuel 2 points
+[OK] D1 : 5193 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123929 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 1.0, p90 2.0, p99 5.0 (2253135 ticks)
+[OK] fichiers dans data/univers/USDCAD/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== USDCHF (forex) -> USDCHF ===
+[--] symbol_select(USDCHF) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US Dollar vs Swiss Franc | path Forex\USDCHF
+     devises USD/CHF (marge USD), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long 0.1, short -1.0, triple le mercredi), spread actuel 3 points
+[OK] D1 : 5191 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123884 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 1.0, p90 2.0, p99 5.0 (2498318 ticks)
+[OK] fichiers dans data/univers/USDCHF/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== NZDUSD (forex) -> NZDUSD ===
+[--] symbol_select(NZDUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     New Zealand Dollar vs US Dollar | path Forex\NZDUSD
+     devises NZD/USD (marge NZD), décimales 5, contrat 100000.0, lots 0.01 à 500.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_FOREX, swap SYMBOL_SWAP_MODE_POINTS (long 2.8, short -6.7, triple le mercredi), spread actuel 0 points
+[OK] D1 : 5191 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 123879 bougies, du 2006-11-14 05:00 au 2026-11-13 22:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 1.0, p90 3.0, p99 12.0 (1290096 ticks)
+[OK] fichiers dans data/univers/NZDUSD/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== XAUUSD (métaux) -> XAUUSD ===
+[--] symbol_select(XAUUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Gold vs US Dollar | path Metals\XAUUSD
+     devises XAU/USD (marge USD), décimales 2, contrat 100.0, lots 0.01 à 100.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_CFDLEVERAGE, swap SYMBOL_SWAP_MODE_POINTS (long -12.6, short -4.6, triple le mercredi), spread actuel 21 points
+[OK] D1 : 5149 bougies, du 2006-11-15 00:00 au 2026-11-12 00:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 116918 bougies, du 2006-11-14 05:00 au 2026-11-13 21:00 (20.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] M15 : 141071 bougies, du 2020-11-13 17:00 au 2026-11-13 22:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 13.0, p90 40.0, p99 58.0 (3723667 ticks)
+[OK] fichiers dans data/univers/XAUUSD/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== XAGUSD (métaux) -> XAGUSD ===
+[--] symbol_select(XAGUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Silver vs US Dollar | path Metals\XAGUSD
+     devises XAG/USD (marge USD), décimales 3, contrat 5000.0, lots 0.01 à 100.0 par 0.01, complet
+     calcul SYMBOL_CALC_MODE_CFDLEVERAGE, swap SYMBOL_SWAP_MODE_POINTS (long -2.3, short 0.2, triple le mercredi), spread actuel 6 points
+[OK] D1 : 4642 bougies, du 2008-11-07 00:00 au 2026-11-12 00:00 (18.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] H1 : 105724 bougies, du 2008-11-07 23:00 au 2026-11-13 21:00 (18.0 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 7.0, p90 11.0, p99 17.0 (5255810 ticks)
+[OK] fichiers dans data/univers/XAGUSD/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== US500 (indices) -> US500 ===
+[--] symbol_select(US500) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US SPX 500 Index | path Indexes\US500
+     devises USD/USD (marge USD), décimales 2, contrat 1.0, lots 0.1 à 250.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFD, swap SYMBOL_SWAP_MODE_CURRENCY_SYMBOL (long -0.31, short -0.26, triple le vendredi), spread actuel 30 points
+[OK] D1 : 3652 bougies, du 2012-08-06 00:00 au 2026-11-12 00:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-17 00:00:00 au 2025-09-09 00:00:00 (38.0 jours hors week-end)
+[OK] H1 : 63976 bougies, du 2012-08-06 00:00 au 2026-11-13 21:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-16 11:00:00 au 2025-09-09 14:00:00 (39.1 jours hors week-end)
+[OK] M15 : 137203 bougies, du 2020-11-13 17:00 au 2026-11-13 22:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-16 10:45:00 au 2025-09-09 14:30:00 (39.2 jours hors week-end)
+[OK] spread (points) sur 10 jours ouvrés : médiane 50.0, p90 50.0, p99 50.0 (1425799 ticks)
+[OK] fichiers dans data/univers/US500/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== NAS100 (indices) -> USTEC ===
+[--] symbol_select(USTEC) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US Tech 100 Index | path Indexes\USTEC
+     devises USD/USD (marge USD), décimales 2, contrat 1.0, lots 0.1 à 250.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFD, swap SYMBOL_SWAP_MODE_CURRENCY_MARGIN (long -0.82, short -0.75, triple le vendredi), spread actuel 90 points
+[OK] D1 : 1088 bougies, du 2022-07-06 00:00 au 2026-11-12 00:00 (4.4 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] D1 : 4.4 ans seulement chez ce broker, moins que les 8 ans exigés par le plan de recherche pour ce timeframe
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-17 00:00:00 au 2025-09-09 00:00:00 (38.0 jours hors week-end)
+[OK] H1 : 24701 bougies, du 2022-07-06 12:00 au 2026-11-13 21:00 (4.4 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-16 11:00:00 au 2025-09-09 14:00:00 (39.1 jours hors week-end)
+[OK] M15 : 98607 bougies, du 2022-07-06 12:30 au 2026-11-13 22:30 (4.4 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-16 10:45:00 au 2025-09-09 14:30:00 (39.2 jours hors week-end)
+[OK] spread (points) sur 10 jours ouvrés : médiane 100.0, p90 100.0, p99 100.0 (3225729 ticks)
+[OK] fichiers dans data/univers/NAS100/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== US30 (indices) -> US30 ===
+[--] symbol_select(US30) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     US Wall Street 30 Index | path Indexes\US30
+     devises USD/USD (marge USD), décimales 2, contrat 1.0, lots 0.1 à 250.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFD, swap SYMBOL_SWAP_MODE_CURRENCY_MARGIN (long -2.21, short -1.99, triple le vendredi), spread actuel 70 points
+[OK] D1 : 3653 bougies, du 2012-08-06 00:00 au 2026-11-12 00:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-17 00:00:00 au 2025-09-09 00:00:00 (38.0 jours hors week-end)
+[OK] H1 : 63947 bougies, du 2012-08-06 00:00 au 2026-11-13 21:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-16 11:00:00 au 2025-09-09 14:00:00 (39.1 jours hors week-end)
+[OK] spread (points) sur 10 jours ouvrés : médiane 120.0, p90 120.0, p99 120.0 (1693035 ticks)
+[OK] fichiers dans data/univers/US30/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== GER40 (indices) -> DE40 ===
+[--] symbol_select(DE40) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Germany 40 Index | path Indexes\DE40
+     devises USD/EUR (marge EUR), décimales 2, contrat 1.0, lots 0.1 à 250.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFD, swap SYMBOL_SWAP_MODE_CURRENCY_MARGIN (long -0.7, short -1.12, triple le vendredi), spread actuel 80 points
+[OK] D1 : 3600 bougies, du 2012-08-06 00:00 au 2026-11-12 00:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 1 trou(s) de plus de 3 jours hors week-end :
+       du 2025-07-24 00:00:00 au 2025-09-09 00:00:00 (33.0 jours hors week-end)
+[OK] H1 : 61858 bougies, du 2012-08-06 00:00 au 2026-11-13 20:00 (14.3 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] 8 trou(s) de plus de 3 jours hors week-end :
+       du 2012-12-21 01:00:00 au 2012-12-27 00:00:00 (4.0 jours hors week-end)
+       du 2013-12-23 01:00:00 au 2013-12-27 00:00:00 (4.0 jours hors week-end)
+       du 2014-12-23 01:00:00 au 2014-12-29 00:00:00 (4.0 jours hors week-end)
+       du 2018-12-21 23:00:00 au 2018-12-27 09:00:00 (3.4 jours hors week-end)
+       du 2019-12-24 00:00:00 au 2019-12-27 03:00:00 (3.1 jours hors week-end)
+       ... et 3 autre(s)
+[OK] M15 : 130868 bougies, du 2020-11-13 17:00 au 2026-11-13 21:30 (6.0 ans ; demandé : 6 ans)
+     bougie en cours de formation retirée : 1
+[--] 3 trou(s) de plus de 3 jours hors week-end :
+       du 2024-12-23 23:00:00 au 2024-12-27 02:15:00 (3.1 jours hors week-end)
+       du 2025-07-23 00:15:00 au 2025-09-09 14:30:00 (34.6 jours hors week-end)
+       du 2025-12-23 23:00:00 au 2025-12-29 02:15:00 (3.1 jours hors week-end)
+[OK] spread (points) sur 10 jours ouvrés : médiane 50.0, p90 200.0, p99 400.0 (1175739 ticks)
+[OK] fichiers dans data/univers/GER40/ : D1.csv, H1.csv, M15.csv, symbol_info.json, spread_stats.json
+
+=== UK100 (indices) -> UK100 ===
+[--] symbol_select(UK100) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     FTSE 100 Index | path Indexes\UK100
+     devises GBP/GBP (marge GBP), décimales 1, contrat 10.0, lots 0.1 à 5.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFDLEVERAGE, swap SYMBOL_SWAP_MODE_CURRENCY_MARGIN (long -5.1, short -2.0, triple le mercredi), spread actuel 11 points
+[OK] D1 : 47 bougies, du 2026-03-06 00:00 au 2026-05-14 00:00 (0.2 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] D1 : 0.2 ans seulement chez ce broker, moins que les 8 ans exigés par le plan de recherche pour ce timeframe
+[!!] H1 : aucune bougie reçue (code 1 : Success)
+[OK] spread (points) sur 10 jours ouvrés : médiane 13.0, p90 26.0, p99 31.0 (909509 ticks)
+[OK] fichiers dans data/univers/UK100/ : D1.csv, symbol_info.json, spread_stats.json
+
+=== JP225 (indices) -> JPN225 ===
+[--] symbol_select(JPN225) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     Nikkei 225 | path Indexes\JPN225
+     devises JPY/JPY (marge JPY), décimales 0, contrat 100.0, lots 1.0 à 170.0 par 1.0, désactivé
+     calcul SYMBOL_CALC_MODE_CFD, swap SYMBOL_SWAP_MODE_DISABLED (long 294.231, short -304.231, triple le vendredi), spread actuel 32 points
+[OK] D1 : 1957 bougies, du 2019-04-29 00:00 au 2026-11-12 00:00 (7.5 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] D1 : 7.5 ans seulement chez ce broker, moins que les 8 ans exigés par le plan de recherche pour ce timeframe
+[OK] H1 : 43400 bougies, du 2019-04-29 03:00 au 2026-11-13 22:00 (7.5 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[OK] spread (points) sur 10 jours ouvrés : médiane 9.0, p90 19.0, p99 29.0 (2023463 ticks)
+[OK] fichiers dans data/univers/JP225/ : D1.csv, H1.csv, symbol_info.json, spread_stats.json
+
+=== RÉSUMÉ ===
+Décalage heure serveur - UTC : -5 h (NON fiable)
+[OK] EURUSD  EURUSD       D1 5192 (2006-11-15 -> 2026-11-12) ; H1 123923 (2006-11-14 -> 2026-11-13) ; M15 149141 (2020-11-13 -> 2026-11-13)
+[OK] GBPUSD  GBPUSD       D1 5191 (2006-11-15 -> 2026-11-12) ; H1 123897 (2006-11-14 -> 2026-11-13) ; M15 149139 (2020-11-13 -> 2026-11-13)
+[OK] USDJPY  USDJPY       D1 5192 (2006-11-15 -> 2026-11-12) ; H1 123903 (2006-11-14 -> 2026-11-13)
+[OK] AUDUSD  AUDUSD       D1 5193 (2006-11-15 -> 2026-11-12) ; H1 123921 (2006-11-14 -> 2026-11-13)
+[OK] USDCAD  USDCAD       D1 5193 (2006-11-15 -> 2026-11-12) ; H1 123929 (2006-11-14 -> 2026-11-13)
+[OK] USDCHF  USDCHF       D1 5191 (2006-11-15 -> 2026-11-12) ; H1 123884 (2006-11-14 -> 2026-11-13)
+[OK] NZDUSD  NZDUSD       D1 5191 (2006-11-15 -> 2026-11-12) ; H1 123879 (2006-11-14 -> 2026-11-13)
+[OK] XAUUSD  XAUUSD       D1 5149 (2006-11-15 -> 2026-11-12) ; H1 116918 (2006-11-14 -> 2026-11-13) ; M15 141071 (2020-11-13 -> 2026-11-13)
+[OK] XAGUSD  XAGUSD       D1 4642 (2008-11-07 -> 2026-11-12) ; H1 105724 (2008-11-07 -> 2026-11-13)
+[OK] US500   US500        D1 3652 (2012-08-06 -> 2026-11-12) ; H1 63976 (2012-08-06 -> 2026-11-13) ; M15 137203 (2020-11-13 -> 2026-11-13)
+[OK] NAS100  USTEC        D1 1088 (2022-07-06 -> 2026-11-12) ; H1 24701 (2022-07-06 -> 2026-11-13) ; M15 98607 (2022-07-06 -> 2026-11-13)
+       [!!] D1 : 4.4 ans d'historique seulement
+[OK] US30    US30         D1 3653 (2012-08-06 -> 2026-11-12) ; H1 63947 (2012-08-06 -> 2026-11-13)
+[OK] GER40   DE40         D1 3600 (2012-08-06 -> 2026-11-12) ; H1 61858 (2012-08-06 -> 2026-11-13) ; M15 130868 (2020-11-13 -> 2026-11-13)
+[OK] UK100   UK100        D1 47 (2026-03-06 -> 2026-05-14)
+       [!!] D1 : 0.2 ans d'historique seulement
+       [!!] H1 absent
+[OK] JP225   JPN225       D1 1957 (2019-04-29 -> 2026-11-12) ; H1 43400 (2019-04-29 -> 2026-11-13)
+       [!!] D1 : 7.5 ans d'historique seulement
+[--] BTCUSD  ABSENT : introuvable chez le broker : alias cherchés BTCUSD, XBTUSD, BITCOIN
+[--] ETHUSD  ABSENT : introuvable chez le broker : alias cherchés ETHUSD, ETHEREUM
+
+[OK] forex : 7/7 symbole(s) exporté(s)
+[OK] métaux : 2/2 symbole(s) exporté(s)
+[OK] indices : 6/6 symbole(s) exporté(s)
+     crypto : aucun symbole chez ce broker
+     univers.json : C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers\univers.json
+
+=> TERMINÉ : au moins un symbole exporté dans chaque classe disponible.

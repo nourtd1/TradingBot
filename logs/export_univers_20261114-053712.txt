@@ -1,0 +1,49 @@
+Recherche multi-marchés - export de l'univers MetaTrader 5
+Date : 2026-11-14 05:37:12 UTC | Python 3.13.17
+Demande : D1 et H1 sur 20 ans, M15 sur 6 ans, symboles UK100, dossier C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers
+Configuration : 17 symboles génériques, 0 nom(s) imposé(s) par « forcer »
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal connecté (build 6317, max barres par graphique : 100000000)
+     compte démo, devise USD, levier 1:100, mode hedging
+     broker MetaQuotes Ltd., serveur MetaQuotes-Demo
+
+=== Symboles du broker ===
+     12157 symboles dans le terminal
+
+=== Résolution des noms ===
+[OK] UK100   -> UK100
+            retenu : UK100 (visible)
+            attention : UK100 n'est pas tradable chez ce broker (trade_mode désactivé)
+
+=== Décalage horaire du serveur ===
+[--] symbol_select(UK100) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     mesure sur UK100 (UK100)
+     dernier tick : 2026-05-15 14:15:52 (heure serveur)
+[--] AVERTISSEMENT : pas de nouveau tick depuis plus de 15 s, ou dernier tick trop ancien (plus de 10 min) : marché probablement fermé.
+     Décalage serveur - UTC estimé à -4383 h, NON FIABLE. Relance l'export pendant l'ouverture du marché (lundi à vendredi) pour le mesurer.
+[--] décalage non fiable : chaque symbole retire alors toute bougie qui finit après son dernier tick (prudent : peut retirer une bougie complète).
+
+=== UK100 (indices) -> UK100 ===
+[--] symbol_select(UK100) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     FTSE 100 Index | path Indexes\UK100
+     devises GBP/GBP (marge GBP), décimales 1, contrat 10.0, lots 0.1 à 5.0 par 0.1, désactivé
+     calcul SYMBOL_CALC_MODE_CFDLEVERAGE, swap SYMBOL_SWAP_MODE_CURRENCY_MARGIN (long -5.1, short -2.0, triple le mercredi), spread actuel 11 points
+[OK] D1 : 47 bougies, du 2026-03-06 00:00 au 2026-05-14 00:00 (0.2 ans ; demandé : 20 ans)
+     bougie en cours de formation retirée : 1
+[--] D1 : 0.2 ans seulement chez ce broker, moins que les 8 ans exigés par le plan de recherche pour ce timeframe
+[!!] H1 : aucune bougie reçue (code 1 : Success)
+[OK] spread (points) sur 10 jours ouvrés : médiane 13.0, p90 26.0, p99 31.0 (909509 ticks)
+[OK] fichiers dans data/univers/UK100/ : D1.csv, symbol_info.json, spread_stats.json
+
+=== RÉSUMÉ ===
+Décalage heure serveur - UTC : -4383 h (NON fiable)
+[OK] UK100   UK100        D1 47 (2026-03-06 -> 2026-05-14)
+       [!!] D1 : 0.2 ans d'historique seulement
+       [!!] H1 absent
+
+[OK] indices : 1/1 symbole(s) exporté(s)
+     univers.json : C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\univers\univers.json
+     (export partiel : les autres symboles de univers.json sont conservés)
+
+=> TERMINÉ : au moins un symbole exporté dans chaque classe disponible.

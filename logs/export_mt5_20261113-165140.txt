@@ -1,0 +1,68 @@
+SentiTrade - export de l'historique MetaTrader 5
+Date : 2026-11-13 16:51:40 UTC | Python 3.13.17
+Demande : 5 an(s) d'historique, symbole XAUUSD, dossier C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\mt5
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal connecté (build 6317, max barres par graphique : 100000000)
+     compte démo, devise USD, levier 1:100, mode hedging
+     broker MetaQuotes Ltd., serveur MetaQuotes-Demo
+
+=== Symbole ===
+     symbole demandé : XAUUSD
+[--] symbol_select(XAUUSD) a échoué (code 1 : Success), mais le symbole est déjà visible : on continue
+     décimales 2, point 0.01, contrat 100.0, volume min 0.01, pas 0.01, spread actuel 13 points
+     dernier tick : 2026-11-13 18:51:41 (heure serveur)
+[OK] cotations en direct ; décalage heure serveur - UTC : +2 h
+
+=== Bougies M1 ===
+[OK] 1758514 bougies, du 2021-11-15 01:05 au 2026-11-13 18:50 -> XAUUSD_M1.csv
+     bougie en cours de formation retirée : 1
+     aucun trou de plus de 3 jours hors week-end
+
+=== Bougies M15 ===
+[OK] 117551 bougies, du 2021-11-15 01:00 au 2026-11-13 18:30 -> XAUUSD_M15.csv
+     bougie en cours de formation retirée : 1
+     aucun trou de plus de 3 jours hors week-end
+
+=== Bougies H1 ===
+[OK] 29416 bougies, du 2021-11-15 01:00 au 2026-11-13 17:00 -> XAUUSD_H1.csv
+     bougie en cours de formation retirée : 1
+     aucun trou de plus de 3 jours hors week-end
+
+=== Statistiques de spread ===
+[OK] 3669650 ticks sur 10 jours ouvrés (2026-11-02 au 2026-11-13)
+     spread global (points) : médiane 13.0, p90 40.0, p99 59.0
+       01h : médiane   21.0  p90   77.0  p99  661.0  (106050 ticks)
+       02h : médiane   17.0  p90   42.0  p99   54.0  (162581 ticks)
+       03h : médiane   17.0  p90   48.0  p99   57.0  (246777 ticks)
+       04h : médiane   17.0  p90   46.0  p99   54.0  (190999 ticks)
+       05h : médiane   17.0  p90   44.0  p99   53.0  (154248 ticks)
+       06h : médiane   13.0  p90   39.0  p99   51.0  (117547 ticks)
+       07h : médiane   13.0  p90   44.0  p99   54.0  (167388 ticks)
+       08h : médiane   13.0  p90   44.0  p99   53.0  (168462 ticks)
+       09h : médiane   13.0  p90   43.0  p99   52.0  (144014 ticks)
+       10h : médiane   13.0  p90   42.0  p99   51.0  (158725 ticks)
+       11h : médiane   13.0  p90   40.0  p99   48.0  (152423 ticks)
+       12h : médiane   13.0  p90   37.0  p99   44.0  (125593 ticks)
+       13h : médiane   13.0  p90   35.0  p99   44.0  (122209 ticks)
+       14h : médiane   13.0  p90   39.0  p99   47.0  (144646 ticks)
+       15h : médiane   13.0  p90   47.0  p99   75.0  (239521 ticks)
+       16h : médiane   13.0  p90   39.0  p99   53.0  (249618 ticks)
+       17h : médiane   13.0  p90   32.0  p99   46.0  (245750 ticks)
+       18h : médiane   13.0  p90   30.0  p99   42.0  (204590 ticks)
+       19h : médiane   13.0  p90   32.0  p99   41.0  (151176 ticks)
+       20h : médiane   13.0  p90   33.0  p99   42.0  (136707 ticks)
+       21h : médiane   13.0  p90   30.0  p99   41.0  (137758 ticks)
+       22h : médiane   21.0  p90   32.0  p99   43.0  (142868 ticks)
+
+=== Caractéristiques du symbole ===
+[OK] symbol_info.json
+
+=== RÉSUMÉ ===
+[OK] M1 : 1758514 bougies exportées
+[OK] M15 : 117551 bougies exportées
+[OK] H1 : 29416 bougies exportées
+[OK] spread_stats.json
+[OK] symbol_info.json
+
+=> EXPORT TERMINÉ : fichiers dans C:\Users\annmh\AppData\Local\Claude-3p\local-agent-mode-sessions\c926e419\00000000\c14cc7f3\outputs\TradingBot\data\mt5

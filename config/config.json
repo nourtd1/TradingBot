@@ -1,0 +1,37 @@
+{
+  "_commentaire": "Parametres de SentiTrade. Prix et distances en dollars, heures = heure du serveur du broker. Voir docs/SPEC_TECHNIQUE.md. Aucun identifiant ici.",
+  "symbole": "XAUUSD",
+  "strategie": {
+    "ema_periode": 50,
+    "pente_ema_barres": 3,
+    "debut_session": "09:00",
+    "derniere_entree": "21:00",
+    "cloture_forcee": "21:55",
+    "jours_autorises": [0, 1, 2, 3, 4],
+    "fvg_ecart_min": 0.0,
+    "mode_entree": "bord",
+    "validite_setup_barres": 8,
+    "sl_marge_fixe": 0.0,
+    "sl_plafond": 5.0,
+    "tp1_r": 1.0,
+    "tp1_fraction": 0.5,
+    "spread_max": 0.30,
+    "adr_periode": 14,
+    "adr_reference": 100,
+    "adr_ratio_min": 0.5,
+    "adr_ratio_max": 2.0
+  },
+  "risque": {
+    "risque_par_trade_pct": 1.0,
+    "perte_jour_max_pct": 3.0,
+    "drawdown_max_pct": 15.0,
+    "levier_effectif_max": 10.0,
+    "positions_max": 1,
+    "exiger_lot_divisible": true
+  },
+  "execution": {
+    "glissement_entree": 0.05,
+    "glissement_stop": 0.10,
+    "commission_par_lot": 0.0
+  }
+}

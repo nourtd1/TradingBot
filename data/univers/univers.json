@@ -1,0 +1,292 @@
+{
+  "genere_le_utc": "2026-11-14 05:40:58",
+  "decalage_serveur_utc_heures": -6,
+  "decalage_fiable": false,
+  "build_terminal": 6317,
+  "symboles": {
+    "EURUSD": {
+      "nom_broker": "EURUSD",
+      "classe": "forex",
+      "dossier": "EURUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 5192,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123922,
+          "premiere": "2006-11-14 06:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        },
+        "M15": {
+          "barres": 149138,
+          "premiere": "2020-11-13 17:45:00",
+          "derniere": "2026-11-13 23:30:00"
+        }
+      }
+    },
+    "GBPUSD": {
+      "nom_broker": "GBPUSD",
+      "classe": "forex",
+      "dossier": "GBPUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 5191,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123896,
+          "premiere": "2006-11-14 06:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        },
+        "M15": {
+          "barres": 149136,
+          "premiere": "2020-11-13 17:45:00",
+          "derniere": "2026-11-13 23:30:00"
+        }
+      }
+    },
+    "USDJPY": {
+      "nom_broker": "USDJPY",
+      "classe": "forex",
+      "dossier": "USDJPY",
+      "timeframes": {
+        "D1": {
+          "barres": 5192,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123903,
+          "premiere": "2006-11-14 05:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    },
+    "AUDUSD": {
+      "nom_broker": "AUDUSD",
+      "classe": "forex",
+      "dossier": "AUDUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 5193,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123921,
+          "premiere": "2006-11-14 05:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    },
+    "USDCAD": {
+      "nom_broker": "USDCAD",
+      "classe": "forex",
+      "dossier": "USDCAD",
+      "timeframes": {
+        "D1": {
+          "barres": 5193,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123929,
+          "premiere": "2006-11-14 05:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    },
+    "USDCHF": {
+      "nom_broker": "USDCHF",
+      "classe": "forex",
+      "dossier": "USDCHF",
+      "timeframes": {
+        "D1": {
+          "barres": 5191,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123884,
+          "premiere": "2006-11-14 05:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    },
+    "NZDUSD": {
+      "nom_broker": "NZDUSD",
+      "classe": "forex",
+      "dossier": "NZDUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 5191,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 123879,
+          "premiere": "2006-11-14 05:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    },
+    "XAUUSD": {
+      "nom_broker": "XAUUSD",
+      "classe": "metaux",
+      "dossier": "XAUUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 5149,
+          "premiere": "2006-11-15 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 116917,
+          "premiere": "2006-11-14 06:00:00",
+          "derniere": "2026-11-13 21:00:00"
+        },
+        "M15": {
+          "barres": 141068,
+          "premiere": "2020-11-13 17:45:00",
+          "derniere": "2026-11-13 22:30:00"
+        }
+      }
+    },
+    "XAGUSD": {
+      "nom_broker": "XAGUSD",
+      "classe": "metaux",
+      "dossier": "XAGUSD",
+      "timeframes": {
+        "D1": {
+          "barres": 4642,
+          "premiere": "2008-11-07 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 105724,
+          "premiere": "2008-11-07 23:00:00",
+          "derniere": "2026-11-13 21:00:00"
+        }
+      }
+    },
+    "US500": {
+      "nom_broker": "US500",
+      "classe": "indices",
+      "dossier": "US500",
+      "timeframes": {
+        "D1": {
+          "barres": 3652,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 63976,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-13 21:00:00"
+        },
+        "M15": {
+          "barres": 137203,
+          "premiere": "2020-11-13 17:00:00",
+          "derniere": "2026-11-13 22:30:00"
+        }
+      }
+    },
+    "NAS100": {
+      "nom_broker": "USTEC",
+      "classe": "indices",
+      "dossier": "NAS100",
+      "timeframes": {
+        "D1": {
+          "barres": 1088,
+          "premiere": "2022-07-06 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 24701,
+          "premiere": "2022-07-06 12:00:00",
+          "derniere": "2026-11-13 21:00:00"
+        },
+        "M15": {
+          "barres": 98607,
+          "premiere": "2022-07-06 12:30:00",
+          "derniere": "2026-11-13 22:30:00"
+        }
+      }
+    },
+    "US30": {
+      "nom_broker": "US30",
+      "classe": "indices",
+      "dossier": "US30",
+      "timeframes": {
+        "D1": {
+          "barres": 3653,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 63947,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-13 21:00:00"
+        }
+      }
+    },
+    "GER40": {
+      "nom_broker": "DE40",
+      "classe": "indices",
+      "dossier": "GER40",
+      "timeframes": {
+        "D1": {
+          "barres": 3600,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 61858,
+          "premiere": "2012-08-06 00:00:00",
+          "derniere": "2026-11-13 20:00:00"
+        },
+        "M15": {
+          "barres": 130868,
+          "premiere": "2020-11-13 17:00:00",
+          "derniere": "2026-11-13 21:30:00"
+        }
+      }
+    },
+    "UK100": {
+      "nom_broker": "UK100",
+      "classe": "indices",
+      "dossier": "UK100",
+      "timeframes": {
+        "D1": {
+          "barres": 47,
+          "premiere": "2026-03-06 00:00:00",
+          "derniere": "2026-05-14 00:00:00"
+        }
+      }
+    },
+    "JP225": {
+      "nom_broker": "JPN225",
+      "classe": "indices",
+      "dossier": "JP225",
+      "timeframes": {
+        "D1": {
+          "barres": 1957,
+          "premiere": "2019-04-29 00:00:00",
+          "derniere": "2026-11-12 00:00:00"
+        },
+        "H1": {
+          "barres": 43400,
+          "premiere": "2019-04-29 03:00:00",
+          "derniere": "2026-11-13 22:00:00"
+        }
+      }
+    }
+  },
+  "absents": {
+    "BTCUSD": "introuvable chez le broker : alias cherchés BTCUSD, XBTUSD, BITCOIN",
+    "ETHUSD": "introuvable chez le broker : alias cherchés ETHUSD, ETHEREUM"
+  }
+}

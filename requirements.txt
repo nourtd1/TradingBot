@@ -1,0 +1,21 @@
+# TradingBot - dependances Python du PC (installees par INSTALLER.bat
+# dans %USERPROFILE%\.tradingbot\venv). Fichier volontairement en ASCII.
+#
+# Coeur de calcul : MEMES versions que l'environnement de test de Claude,
+# pour que les backtests faits chez Claude et le bot sur le PC calculent
+# exactement la meme chose.
+numpy==2.2.6
+pandas==2.3.3
+PyYAML==6.0.3
+matplotlib==3.10.9
+requests==2.34.2
+
+# Chargement des secrets (%USERPROFILE%\.tradingbot\.env).
+python-dotenv>=1.0,<2
+
+# Pilotage du terminal MetaTrader 5 (donnees de marche, compte, ordres).
+# Le paquet officiel de MetaQuotes n'existe que pour Windows : le marqueur
+# sys_platform le fait ignorer ailleurs (sandbox Linux de Claude, ou le
+# code MT5 est teste avec un faux module, tests/fakes/fake_mt5.py).
+# Version minimale recente : compatible Python 3.12 / 3.13 et numpy 2.
+MetaTrader5>=5.0.5200 ; sys_platform == "win32"

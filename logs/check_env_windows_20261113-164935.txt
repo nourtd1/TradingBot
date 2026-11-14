@@ -1,0 +1,57 @@
+SentiTrade - vérification de l'environnement
+Date : 2026-11-13 16:49:35 UTC | machine : Nour
+
+=== Python ===
+Version    : 3.13.17 (64 bits)
+Exécutable : C:\Users\annmh\.tradingbot\venv\Scripts\python.exe
+Système    : Windows-11-10.0.26300-SP0
+
+=== Librairies ===
+[OK] numpy          2.2.6        calcul numérique
+[OK] pandas         2.3.3        séries temporelles, backtests
+[OK] PyYAML         6.0.3        fichiers de configuration
+[OK] matplotlib     3.10.9       graphiques des rapports
+[OK] requests       2.34.2       HTTP, alertes
+[OK] python-dotenv  1.2.4        chargement des secrets
+[OK] MetaTrader5    5.0.6231     pilotage du terminal MetaTrader 5
+
+=== Calculs numpy / pandas ===
+[OK] moyenne mobile, EMA, rendements, rééchantillonnage OHLC
+
+=== Fuseaux horaires ===
+[OK] base des fuseaux disponible, heures d'été et d'hiver correctes
+     fuseau de cette machine : South Africa Standard Time (UTC+0200)
+
+=== Accès à internet ===
+[OK] PyPI       OK, 1003 ms - installation et mises à jour des librairies
+[OK] Telegram   OK, le serveur répond (573 ms) - alertes Telegram
+[OK] Discord    OK, 310 ms - alertes Discord
+
+=== Terminal MetaTrader 5 ===
+[OK] terminal joint (build 6317, société MetaQuotes Ltd.)
+[OK] connexion au serveur du broker : oui
+[OK] bouton Algo Trading : activé
+     nombre max de barres dans les graphiques : 100000000
+[OK] type de compte : démo
+[OK] devise du compte : USD
+     levier : 1:100
+     mode de compte : hedging
+     broker : MetaQuotes Ltd. | serveur : MetaQuotes-Demo
+[OK] plusieurs symboles de l'or trouvés (GOLD, XAUUSD) : GOLD retenu (tradable et visible). Pour en imposer un autre : --symbole NOM
+     décimales : 2 | point : 0.01
+     taille du contrat : 1.0 onces par lot
+     volume min : 1.0 lot | pas : 1.0 lot
+     spread actuel : 0 points = 0.00 $
+
+=== RÉSUMÉ ===
+[OK] Python 3.13.17
+[OK] Librairies 7/7
+[OK] Calculs numpy/pandas
+[OK] Fuseaux horaires
+[OK] Accès internet 3/3 : PyPI, Telegram, Discord
+[OK] MetaTrader 5 : connecté au serveur
+[OK] MetaTrader 5 : Algo Trading activé
+[OK] Compte démo
+[OK] Symbole de l'or : GOLD
+
+=> TOUT EST OK
